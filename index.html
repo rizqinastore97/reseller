@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Peluang Bisnis Aplikasi Premium - Rizqina Store</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-wa { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+    .text-gradient { background: linear-gradient(135deg, #E91E63 0%, #9333EA 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .bg-gradient-premium { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
+    .bg-gold-gradient { background: linear-gradient(135deg, #FDE047 0%, #EAB308 100%); }
+    
+    @keyframes bounce-down { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+    .animate-bounce-down { animation: bounce-down 1s infinite ease-in-out; }
+    
+    @keyframes pulse-soft { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }
+    .animate-pulse-soft { animation: pulse-soft 2s infinite ease-in-out; }
+
+    /* Custom Scrollbar */
+    .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+    .custom-scrollbar::-webkit-scrollbar-track { background: #f1f5f9; border-radius: 10px; }
+    .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+  </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased selection:bg-purple-200 selection:text-purple-900">
+
+  <div class="max-w-md mx-auto bg-white min-h-screen shadow-2xl relative overflow-hidden pb-10">
+    
+    <!-- BACKGROUND DEKORASI -->
+    <div class="absolute top-0 right-0 w-64 h-64 bg-rose-100/60 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/2"></div>
+    <div class="absolute top-40 left-0 w-48 h-48 bg-purple-100/60 rounded-full blur-3xl pointer-events-none -translate-x-1/2"></div>
+
+    <!-- ================= 1. HEADER & HOOK ================= -->
+    <header class="pt-10 pb-6 px-6 relative z-10 text-center space-y-4">
+      <div class="inline-flex items-center gap-1.5 bg-rose-50 text-rose-600 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest border border-rose-100 shadow-sm">
+        <div class="w-2 h-2 rounded-full bg-rose-500 animate-pulse"></div>
+        Peluang Bisnis 2026
+      </div>
+      
+      <h1 class="text-3xl sm:text-4xl font-black tracking-tighter leading-[1.1] text-slate-900">
+        Bongkar Rahasia Hasilkan <br> <span class="text-gradient">Puluhan Juta</span> Tiap Bulan!
+      </h1>
+      
+      <div class="bg-red-50 border-l-4 border-red-500 p-3 text-left rounded-r-xl shadow-sm mt-4">
+        <p class="text-xs font-bold text-red-700 leading-snug flex items-start gap-2">
+          <i data-lucide="alert-triangle" class="w-4 h-4 shrink-0 mt-0.5"></i>
+          <span>PENTING: Ini 100% Bisnis Jualan Halal, Produk Digital Legal, BUKAN Judi Online, Bukan Crypto, Bukan MLM!</span>
+        </p>
+      </div>
+
+      <p class="text-sm font-semibold text-slate-600 leading-relaxed pt-2">
+        Hanya bermodal HP dan kuota. Sangat cocok dikerjakan oleh <b class="text-slate-800 bg-amber-100 px-1 rounded">Mahasiswa, IRT, dan Pengangguran</b>. Bebas dikerjakan kapanpun & dimanapun sambil rebahan!
+      </p>
+    </header>
+
+    <!-- ================= 2. SLIDER BUKTI PENGHASILAN TERBARU ================= -->
+    <section class="px-6 py-4 relative z-10">
+      <div class="bg-gradient-premium rounded-3xl p-1 shadow-xl">
+        <div class="bg-slate-900 rounded-[1.3rem] overflow-hidden relative">
+          <div class="absolute top-2 left-2 bg-emerald-500 text-white text-[9px] font-black px-2 py-1 rounded-md z-20 uppercase tracking-wider shadow-md flex items-center gap-1">
+            <i data-lucide="trending-up" class="w-3 h-3"></i> Penghasilan Masuk Terus
+          </div>
+          
+          <!-- SLIDER CONTAINER -->
+          <div class="relative w-full h-auto overflow-hidden bg-slate-800">
+            <div class="earning-slide absolute inset-0 transition-opacity duration-700 opacity-100 z-10">
+              <img src="gopay1.jpg" alt="Bukti GoPay 1" class="w-full h-full object-cover">
+            </div>
+            <div class="earning-slide absolute inset-0 transition-opacity duration-700 opacity-0 z-0">
+              <img src="gopay2.jpg" alt="Bukti GoPay 2" class="w-full h-full object-cover">
+            </div>
+            <div class="earning-slide absolute inset-0 transition-opacity duration-700 opacity-0 z-0">
+              <img src="gopay3.jpg" alt="Bukti GoPay 3" class="w-full h-full object-cover">
+            </div>
+            <!-- Spacer agar proporsional -->
+            <img src="gopay1.jpg" class="w-full h-auto invisible" alt="spacer">
+          </div>
+
+          <div class="p-4 bg-slate-900 text-center border-t border-slate-800">
+            <p class="text-xs font-medium text-slate-300">Cuan mengalir deras setiap hari ke e-Wallet. Bukti nyata, no debat!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. BUKTI KOMUNITAS (SOCIAL PROOF) ================= -->
+    <section class="px-6 py-6 relative z-10">
+      <div class="text-center mb-5">
+        <div class="inline-block bg-sky-100 text-sky-700 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-2">Terbukti & Terpercaya</div>
+        <h2 class="text-xl font-black text-slate-900 tracking-tight">Ratusan Reseller Sudah Join!</h2>
+      </div>
+      
+      <div class="bg-white rounded-3xl p-3 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.1)] border border-slate-100 relative">
+        <div class="absolute -top-3 -right-3 bg-rose-500 text-white text-[10px] font-black px-3 py-1.5 rounded-full shadow-lg transform rotate-3">FULL CUAN!</div>
+        <img src="grup-wa.jpg" alt="Grup WhatsApp Rizqina Store" class="w-full h-auto rounded-2xl border border-slate-100">
+        <div class="mt-3 flex items-center justify-center gap-2 bg-emerald-50 text-emerald-700 py-2.5 rounded-xl text-[11px] font-bold">
+          <i data-lucide="check-circle-2" class="w-4 h-4"></i> 576+ Reseller Aktif di Rizqina Store
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. BAGAIMANA CARA KERJANYA? ================= -->
+    <section class="px-6 py-8 bg-slate-50 border-y border-slate-100 relative z-10">
+      <h2 class="text-xl font-black text-slate-900 tracking-tight text-center mb-6">Kerjanya Ngapain Aja Sih?</h2>
+      
+      <div class="space-y-4">
+        <div class="flex gap-4 items-start bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-10 h-10 shrink-0 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center font-black text-lg">1</div>
+          <div>
+            <h3 class="font-black text-sm text-slate-800">Tinggal COPAS (Copy-Paste)</h3>
+            <p class="text-xs text-slate-500 font-medium mt-1.5 leading-relaxed">Ambil gambar promosi yang sudah <b>kami sediakan di grup</b>, lalu posting ke Status WA/Sosmed kamu. <span class="font-bold text-slate-700">Nggak perlu mikir bikin konten!</span></p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-10 h-10 shrink-0 bg-amber-100 text-amber-600 rounded-xl flex items-center justify-center font-black text-lg">2</div>
+          <div>
+            <h3 class="font-black text-sm text-slate-800">Naikkan Harga (Mark-up)</h3>
+            <p class="text-xs text-slate-500 font-medium mt-1.5 leading-relaxed">Karena modal dari kami sangat murah (Harga Agen), <b>kamu bebas naikkan harga pasaran sesukamu!</b></p>
+          </div>
+        </div>
+        <div class="flex gap-4 items-start bg-white p-4 rounded-2xl shadow-sm border border-slate-200">
+          <div class="w-10 h-10 shrink-0 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center font-black text-lg">3</div>
+          <div>
+            <h3 class="font-black text-sm text-slate-800">Uang Masuk, Kamu Untung!</h3>
+            <p class="text-xs text-slate-500 font-medium mt-1.5 leading-relaxed">Pelanggan transfer ke kamu. Lalu kamu order ke Web kami pakai Harga Agen. <b>Selisih uangnya 100% jadi keuntungan BERSIH milikmu.</b></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. KATALOG PRODUK ================= -->
+    <section class="px-6 py-8 relative z-10">
+      <div class="text-center mb-5">
+        <h2 class="text-xl font-black text-slate-900 tracking-tight">Gudang Produk Premium!</h2>
+        <p class="text-xs font-medium text-slate-500 mt-1">Kamu akan dapat supplier untuk puluhan aplikasi ini:</p>
+      </div>
+      
+      <div class="grid grid-cols-3 gap-3">
+        <!-- 1. Netflix (Pakai link Wikipedia karna logo HD dan permanen) -->
+        <div class="bg-white border border-slate-100 rounded-[1.2rem] p-3 flex flex-col items-center justify-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="w-full h-full object-contain drop-shadow-sm">
+          </div>
+          <span class="text-[10px] font-bold text-slate-700">Netflix</span>
+        </div>
+        
+        <!-- 2. Canva Pro -->
+        <div class="bg-white border border-slate-100 rounded-[1.2rem] p-3 flex flex-col items-center justify-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="logo-canva.jpg" alt="Canva Pro" class="w-full h-full object-contain drop-shadow-sm">
+          </div>
+          <span class="text-[10px] font-bold text-slate-700">Canva Pro</span>
+        </div>
+        
+        <!-- 3. Spotify (Logo HD) -->
+        <div class="bg-white border border-slate-100 rounded-[1.2rem] p-3 flex flex-col items-center justify-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg" alt="Spotify" class="w-full h-full object-contain drop-shadow-sm">
+          </div>
+          <span class="text-[10px] font-bold text-slate-700">Spotify</span>
+        </div>
+        
+        <!-- 4. YouTube Premium (Logo HD) -->
+        <div class="bg-white border border-slate-100 rounded-[1.2rem] p-3 flex flex-col items-center justify-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="YouTube" class="w-full h-full object-contain drop-shadow-sm">
+          </div>
+          <span class="text-[10px] font-bold text-slate-700 text-center leading-tight">YouTube<br>Prem</span>
+        </div>
+        
+        <!-- 5. CapCut Pro -->
+        <div class="bg-white border border-slate-100 rounded-[1.2rem] p-3 flex flex-col items-center justify-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-black overflow-hidden p-1 shadow-sm">
+            <img src="logo-capcut.jpg" alt="CapCut" class="w-full h-full object-contain">
+          </div>
+          <span class="text-[10px] font-bold text-slate-700">CapCut Pro</span>
+        </div>
+        
+        <!-- 6. Dan Banyak Lagi -->
+        <div class="bg-white border border-slate-100 rounded-[1.2rem] p-3 flex flex-col items-center justify-center gap-2.5 shadow-sm bg-gradient-to-br from-slate-50 to-slate-100">
+          <div class="w-10 h-10 bg-slate-800 text-white rounded-full flex items-center justify-center shadow-md">
+            <i data-lucide="plus" class="w-5 h-5"></i>
+          </div>
+          <span class="text-[10px] font-bold text-slate-700 text-center leading-tight">Dan Banyak<br>Lagi!</span>
+        </div>
+      </div>
+
+      <button onclick="openAppListModal()" class="w-full mt-4 bg-slate-900 hover:bg-slate-800 text-white text-xs font-black uppercase tracking-wider py-3.5 rounded-2xl flex items-center justify-center gap-2 shadow-lg shadow-slate-900/20 active:scale-95 transition-all">
+        <i data-lucide="list-checks" class="w-4 h-4"></i> Lihat Full 50+ Aplikasi
+      </button>
+    </section>
+
+    <!-- ================= 6. PERBANDINGAN HARGA (KEUNTUNGAN GILA) ================= -->
+    <section class="px-6 py-6 relative z-10">
+      <div class="bg-gradient-premium rounded-3xl p-5 shadow-2xl text-white relative overflow-hidden border border-slate-800">
+        <div class="absolute -right-4 -top-4 opacity-10"><i data-lucide="scissors" class="w-32 h-32"></i></div>
+        <h3 class="font-black text-sm mb-4 relative z-10 flex items-center gap-2">
+          <i data-lucide="video" class="w-5 h-5 text-sky-400"></i> Contoh Margin: CAPCUT PRO
+        </h3>
+        
+        <div class="space-y-4 relative z-10">
+          <div>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1.5">Paket 1 Bulan</span>
+            <div class="bg-white/5 rounded-xl p-3 border border-white/10 flex justify-between items-center mb-1.5">
+              <span class="text-xs font-semibold text-slate-300">Harga Resmi / Shopee</span>
+              <span class="text-sm font-black text-rose-400">Rp 129.000</span>
+            </div>
+            <div class="bg-emerald-500/20 rounded-xl p-3 border border-emerald-400/40 flex justify-between items-center shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+              <span class="text-xs font-bold text-emerald-100">Harga Agen Kamu</span>
+              <span class="text-base font-black text-emerald-400 animate-pulse-soft">Hanya Rp 24.000</span>
+            </div>
+          </div>
+          
+          <div class="w-full h-px bg-white/10"></div>
+
+          <div>
+            <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mb-1.5">Paket 7 Hari</span>
+            <div class="bg-emerald-500/20 rounded-xl p-3 border border-emerald-400/40 flex justify-between items-center shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+              <span class="text-xs font-bold text-emerald-100">Harga Agen Kamu</span>
+              <span class="text-base font-black text-emerald-400 animate-pulse-soft">Hanya Rp 7.000</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-5 pt-4 border-t border-dashed border-white/20 relative z-10 text-center bg-slate-900/50 p-4 rounded-2xl">
+          <p class="text-[11px] text-slate-300 leading-relaxed font-medium">
+            Jual harga <b>Rp 60.000</b> saja, kamu <b class="text-emerald-400">UNTUNG BERSIH Rp 36.000 per transaksi!</b> Sehari laku 5 aja udah cuan Rp 180.000 sambil rebahan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. BUKTI TRANSAKSI & TESTIMONI ================= -->
+    <section class="px-6 py-8 relative z-10">
+      <div class="text-center mb-5">
+        <h2 class="text-xl font-black text-slate-900 tracking-tight">Transaksi Non-Stop!</h2>
+        <p class="text-xs font-medium text-slate-500 mt-1">Pemula pun bisa langsung pecah telor hari ini juga.</p>
+      </div>
+      
+      <div class="bg-white rounded-3xl p-3 shadow-lg border border-slate-100">
+        
+        <!-- Wadah Slider Bukti Transaksi -->
+        <div class="bg-slate-900 rounded-2xl h-[380px] sm:h-[420px] flex flex-col border border-slate-800 overflow-hidden relative" id="transaction-slider">
+          
+          <div class="proof-slide absolute inset-0 transition-opacity duration-700 opacity-100 z-10 flex items-center justify-center p-2">
+            <img src="bukti1.jpg" alt="Bukti Transaksi 1" class="w-full h-full object-contain">
+          </div>
+          <div class="proof-slide absolute inset-0 transition-opacity duration-700 opacity-0 z-0 flex items-center justify-center p-2">
+            <img src="bukti2.jpg" alt="Bukti Transaksi 2" class="w-full h-full object-contain">
+          </div>
+          <div class="proof-slide absolute inset-0 transition-opacity duration-700 opacity-0 z-0 flex items-center justify-center p-2">
+            <img src="bukti3.jpg" alt="Bukti Transaksi 3" class="w-full h-full object-contain">
+          </div>
+          <div class="proof-slide absolute inset-0 transition-opacity duration-700 opacity-0 z-0 flex items-center justify-center p-2">
+            <img src="bukti4.jpg" alt="Bukti Transaksi 4" class="w-full h-full object-contain">
+          </div>
+          <div class="proof-slide absolute inset-0 transition-opacity duration-700 opacity-0 z-0 flex items-center justify-center p-2">
+            <img src="bukti5.jpg" alt="Bukti Transaksi 5" class="w-full h-full object-contain">
+          </div>
+          
+          <!-- Label Testimoni Mengapung -->
+          <div class="absolute bottom-3 left-0 right-0 flex justify-center z-20 px-4">
+            <div class="bg-white/95 backdrop-blur-sm px-4 py-2 rounded-2xl text-[11px] font-bold text-slate-700 border border-slate-200 shadow-xl text-center">
+              <span class="text-emerald-600">"Alhamdulillah gampang banget jualannya, cuan ngalir terus!"</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="mt-3 flex items-center justify-center gap-1.5 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+          <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+          Live Bukti Transaksi Asli di Grup
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. BENEFIT GILA-GILAAN ================= -->
+    <section class="px-6 py-8 bg-rose-50/50 border-y border-rose-100 relative z-10">
+      <div class="text-center mb-6">
+        <h2 class="text-xl font-black text-slate-900 tracking-tight">Fasilitas Jika Kamu Join Hari Ini</h2>
+      </div>
+      
+      <div class="grid grid-cols-1 gap-3">
+        <div class="bg-white p-4 rounded-2xl shadow-sm border border-emerald-100 flex items-start gap-3">
+          <div class="bg-emerald-100 text-emerald-600 p-2 rounded-lg shrink-0 mt-0.5"><i data-lucide="check" class="w-4 h-4"></i></div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-800">Akses Grup Supplier Eksklusif</h4>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-1">Bimbingan rutin, update harga termurah setiap hari, dan circle positif yang saling support.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl shadow-sm border border-emerald-100 flex items-start gap-3">
+          <div class="bg-emerald-100 text-emerald-600 p-2 rounded-lg shrink-0 mt-0.5"><i data-lucide="check" class="w-4 h-4"></i></div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-800">Bahan Promosi Harian</h4>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-1">Disediakan gambar, video, dan teks <i>copywriting</i> gratis. Kamu tinggal copas dan posting.</p>
+          </div>
+        </div>
+
+        <div class="bg-white p-4 rounded-2xl shadow-sm border border-emerald-100 flex items-start gap-3">
+          <div class="bg-emerald-100 text-emerald-600 p-2 rounded-lg shrink-0 mt-0.5"><i data-lucide="check" class="w-4 h-4"></i></div>
+          <div>
+            <h4 class="font-bold text-sm text-slate-800">Akses Website Portal Aktivasi</h4>
+            <p class="text-[11px] text-slate-500 font-medium leading-relaxed mt-1">Pemesanan layanan instan lewat web premium kami. Proses cepat, nggak perlu nunggu lama.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 9. FAQ (TANYA JAWAB) ================= -->
+    <section class="px-6 py-6 relative z-10">
+      <div class="text-center mb-5">
+        <h2 class="text-lg font-black text-slate-900 tracking-tight">Masih Ragu? Baca Ini 👇</h2>
+      </div>
+      
+      <div class="space-y-3">
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <h4 class="font-bold text-xs text-slate-800 mb-1 flex gap-2"><i data-lucide="help-circle" class="w-4 h-4 text-purple-500"></i> Saya gaptek, apakah bisa?</h4>
+          <p class="text-[11px] text-slate-600 ml-6">Sangat bisa! Tugasmu cuma copy-paste gambar ke status WA/Sosmed. Kalau ada yang beli, kami yang proses sistemnya.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <h4 class="font-bold text-xs text-slate-800 mb-1 flex gap-2"><i data-lucide="help-circle" class="w-4 h-4 text-purple-500"></i> Apakah ada biaya bulanan?</h4>
+          <p class="text-[11px] text-slate-600 ml-6">TIDAK ADA. Kamu cukup bayar pendaftaran 1x saja seumur hidup untuk masuk grup dan dapat akses harga agen.</p>
+        </div>
+        <div class="bg-white p-4 rounded-xl border border-slate-200 shadow-sm">
+          <h4 class="font-bold text-xs text-slate-800 mb-1 flex gap-2"><i data-lucide="help-circle" class="w-4 h-4 text-purple-500"></i> Kalau nggak laku gimana?</h4>
+          <p class="text-[11px] text-slate-600 ml-6">Aplikasi premium itu kebutuhan pokok hiburan jaman now. Pasti laku asal kamu rajin posting!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 10. CTA AKHIR & GARANSI 100% ================= -->
+    <section class="px-6 pt-2 pb-8 relative z-10">
+      <div class="bg-white border-2 border-rose-200 p-5 rounded-[2rem] shadow-[0_10px_40px_-10px_rgba(225,29,72,0.3)] relative overflow-hidden">
+        
+        <!-- Timer Promo -->
+        <div class="text-center mb-4 flex flex-col items-center relative z-10">
+          <span class="text-[10px] font-black text-white uppercase tracking-widest mb-2 bg-rose-500 px-3 py-1 rounded-full shadow-sm">⚡ PROMO BERAKHIR DALAM ⚡</span>
+          <div class="flex gap-1.5 text-rose-600 font-black text-2xl font-mono tracking-widest" id="countdown-timer">
+            <span class="bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-100">02</span>:
+            <span class="bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-100">45</span>:
+            <span class="bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-100">30</span>
+          </div>
+        </div>
+
+        <div class="text-center text-xs font-bold text-slate-600 mb-4 relative z-10">
+          Kesempatan EMAS nggak datang dua kali.<br>Join Sekarang, Langsung Bisa Jualan Hari Ini Juga!
+        </div>
+
+        <!-- BADGE GARANSI 100% -->
+        <div class="mb-5 bg-gold-gradient p-0.5 rounded-xl shadow-md relative z-10">
+          <div class="bg-white rounded-[10px] p-3 text-center border border-yellow-100/50">
+            <div class="flex items-center justify-center gap-1.5 mb-1 text-yellow-600">
+              <i data-lucide="shield-check" class="w-5 h-5 fill-yellow-100"></i>
+              <span class="font-black text-sm uppercase tracking-wider">GARANSI 100% UANG KEMBALI</span>
+            </div>
+            <p class="text-[10px] text-slate-600 font-medium leading-relaxed">
+              Jika Anda sudah rajin promosi sesuai bimbingan selama 30 hari tapi tidak mendapatkan 1 pun pembeli (tidak pecah telor), <b>uang pendaftaran Rp 30.000 Anda akan kami kembalikan utuh 100% tanpa potongan!</b>
+            </p>
+          </div>
+        </div>
+
+        <div class="flex justify-center mb-4 relative z-10">
+          <i data-lucide="arrow-down" class="w-7 h-7 text-rose-500 animate-bounce-down"></i>
+        </div>
+
+        <!-- Tombol Aksi Buka Modal Pembayaran -->
+        <button onclick="openPaymentModal()" class="w-full bg-gradient-to-r from-[#E91E63] to-[#9333EA] hover:opacity-95 text-white py-4 px-5 rounded-2xl transition-all active:scale-95 shadow-xl shadow-purple-500/40 flex items-center justify-between group overflow-hidden relative z-10">
+          <div class="absolute inset-0 w-1/2 h-full bg-white/20 skew-x-12 group-hover:translate-x-full transition-transform duration-700 ease-out"></div>
+          <div class="flex flex-col text-left relative z-10">
+            <span class="text-[11px] text-white/70 line-through decoration-rose-300 font-semibold mb-0.5">Harga Normal: Rp 150.000</span>
+            <span class="text-base sm:text-lg font-black tracking-tight drop-shadow-md">CUMA RP 30.000</span>
+          </div>
+          <div class="relative z-10 bg-white text-purple-700 px-4 py-2 rounded-xl text-xs font-black uppercase flex items-center gap-1.5 shadow-sm">
+            <span>DAFTAR SEKARANG</span> <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </div>
+        </button>
+        
+        <p class="text-[10px] text-center text-slate-400 mt-4 font-medium relative z-10">
+          Pembayaran via QRIS (Otomatis).<br>Akses Grup & Web diberikan setelah transfer.
+        </p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ================= MODAL FULL LIST 50+ APLIKASI ================= -->
+  <div id="app-list-modal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm" onclick="closeAppListModal()"></div>
+    
+    <div class="absolute bottom-0 left-0 right-0 sm:top-1/2 sm:left-1/2 sm:transform sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:w-[90%] sm:max-w-md bg-white rounded-t-[2.5rem] sm:rounded-[2.5rem] p-6 shadow-2xl flex flex-col max-h-[85vh] sm:max-h-[80vh]">
+      
+      <div class="flex justify-between items-center mb-4 border-b border-slate-100 pb-4">
+        <div>
+          <h3 class="font-black text-slate-900 text-lg">Katalog Reseller</h3>
+          <p class="text-[10px] font-bold text-emerald-500 uppercase tracking-widest mt-0.5">Semua Tersedia di Rizqina Store</p>
+        </div>
+        <button onclick="closeAppListModal()" class="text-slate-400 hover:text-slate-600 bg-slate-100 p-2 rounded-full transition-colors">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <div class="overflow-y-auto custom-scrollbar pr-2 space-y-4 pb-4">
+        <div>
+          <h4 class="text-xs font-black text-slate-800 bg-slate-100 px-3 py-1.5 rounded-lg inline-block mb-3">🎬 VOD & Film</h4>
+          <ul class="text-xs text-slate-600 space-y-2.5 font-medium ml-1">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Netflix (Sharing/Private)</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Viu Premium</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Disney+ Hotstar</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Prime Video</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> HBO Go / Max</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> WeTV VIP</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Vidio Premier</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> iQIYI VIP</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Bstation Premium</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-black text-slate-800 bg-slate-100 px-3 py-1.5 rounded-lg inline-block mb-3">🎵 Music & Podcast</h4>
+          <ul class="text-xs text-slate-600 space-y-2.5 font-medium ml-1">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Spotify Premium (Famplan/Indv)</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> YouTube Premium</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Apple Music</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Resso Premium</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Joox VIP</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-black text-slate-800 bg-slate-100 px-3 py-1.5 rounded-lg inline-block mb-3">🎨 Design & Editing</h4>
+          <ul class="text-xs text-slate-600 space-y-2.5 font-medium ml-1">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Canva Pro (Edu/Tim)</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> CapCut Pro</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Alight Motion Pro</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> VSCO X / PicsArt Gold</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Adobe Lightroom Premium</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-black text-slate-800 bg-slate-100 px-3 py-1.5 rounded-lg inline-block mb-3">💻 VPN, Edukasi & Lainnya</h4>
+          <ul class="text-xs text-slate-600 space-y-2.5 font-medium ml-1">
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Google One Premium</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> NordVPN / ExpressVPN</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Duolingo Super</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Grammarly Premium</li>
+            <li class="flex items-center gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-emerald-500"></i> Dan masih banyak lagi (50+ Produk)!</li>
+          </ul>
+        </div>
+      </div>
+
+      <button onclick="closeAppListModal()" class="w-full mt-2 bg-slate-900 text-white font-black py-4 rounded-xl text-xs uppercase tracking-widest active:scale-95 transition-transform">
+        Tutup Katalog
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= MODAL PEMBAYARAN QRIS ================= -->
+  <div id="payment-modal" class="fixed inset-0 z-50 hidden">
+    <div class="absolute inset-0 bg-slate-900/70 backdrop-blur-sm" onclick="closePaymentModal()"></div>
+    
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-sm bg-white rounded-[2.5rem] p-6 shadow-2xl flex flex-col items-center text-center">
+      
+      <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 bg-slate-100 p-1.5 rounded-full transition-colors">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="w-14 h-14 bg-emerald-50 text-emerald-500 rounded-2xl flex items-center justify-center mb-4 border border-emerald-100">
+        <i data-lucide="wallet" class="w-7 h-7"></i>
+      </div>
+      
+      <h3 class="font-black text-slate-900 text-xl tracking-tight leading-none mb-1">Aktivasi Reseller</h3>
+      <p class="text-xs font-bold text-rose-500 uppercase tracking-widest bg-rose-50 px-2 py-0.5 rounded mb-4">Total: Rp 30.000</p>
+      
+      <div class="w-full bg-slate-50 border-2 border-dashed border-slate-200 rounded-2xl p-4 mb-4 relative">
+        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-2">Scan QRIS Ini</p>
+        <img src="qris.jpg" alt="QRIS Pembayaran" class="w-48 h-48 object-contain mx-auto rounded-xl bg-white border border-slate-100 p-2 shadow-sm">
+      </div>
+
+      <div class="bg-amber-50 border border-amber-100 rounded-xl p-3 mb-5">
+        <p class="text-[10px] text-amber-800 font-semibold leading-relaxed">
+          Setelah berhasil transfer <b>Rp 30.000</b>, WAJIB klik tombol di bawah ini untuk mengirim bukti ke Admin dan mendapatkan <b>Link Grup Resmi & Akses Web</b>.
+        </p>
+      </div>
+
+      <a href="https://wa.me/6282243890517?text=Halo%20Admin%20Rizqina%20Store!%0A%0ASaya%20sudah%20Transfer%20Rp%2030.000%20untuk%20Promo%20Join%20Reseller.%20Ini%20bukti%20transfernya%20ya%20min.%20Mohon%20akses%20grup%20dan%20website-nya." target="_blank" class="w-full bg-wa hover:opacity-90 text-white py-4 rounded-xl font-black text-sm uppercase tracking-widest shadow-xl shadow-emerald-500/30 flex items-center justify-center gap-2 transition-all active:scale-95">
+        <i data-lucide="check-circle" class="w-5 h-5"></i>
+        Kirim Bukti Transfer
+      </a>
+
+    </div>
+  </div>
+
+  <script>
+    if(typeof lucide !== 'undefined') lucide.createIcons();
+
+    function openPaymentModal() { document.getElementById('payment-modal').classList.remove('hidden'); }
+    function closePaymentModal() { document.getElementById('payment-modal').classList.add('hidden'); }
+    function openAppListModal() { document.getElementById('app-list-modal').classList.remove('hidden'); }
+    function closeAppListModal() { document.getElementById('app-list-modal').classList.add('hidden'); }
+
+    // SLIDER 1: BUKTI PENGHASILAN (GOPAY)
+    const earningSlides = document.querySelectorAll('.earning-slide');
+    let currentEarning = 0;
+    setInterval(() => {
+      earningSlides[currentEarning].classList.replace('opacity-100', 'opacity-0');
+      earningSlides[currentEarning].classList.replace('z-10', 'z-0');
+      currentEarning = (currentEarning + 1) % earningSlides.length;
+      earningSlides[currentEarning].classList.replace('opacity-0', 'opacity-100');
+      earningSlides[currentEarning].classList.replace('z-0', 'z-10');
+    }, 3000);
+
+    // SLIDER 2: BUKTI TRANSAKSI (5 GAMBAR LOKAL)
+    const proofSlides = document.querySelectorAll('.proof-slide');
+    let currentProof = 0;
+    setInterval(() => {
+      if(proofSlides.length > 0) {
+        proofSlides[currentProof].classList.replace('opacity-100', 'opacity-0');
+        proofSlides[currentProof].classList.replace('z-10', 'z-0');
+        currentProof = (currentProof + 1) % proofSlides.length;
+        proofSlides[currentProof].classList.replace('opacity-0', 'opacity-100');
+        proofSlides[currentProof].classList.replace('z-0', 'z-10');
+      }
+    }, 2500);
+
+    // COUNTDOWN TIMER
+    function startTimer() {
+      let hours = 2, minutes = 45, seconds = 32;
+      const timerElement = document.getElementById('countdown-timer');
+
+      setInterval(() => {
+        seconds--;
+        if (seconds < 0) {
+          seconds = 59; minutes--;
+          if (minutes < 0) {
+            minutes = 59; hours--;
+            if (hours < 0) { hours = 2; minutes = 45; seconds = 32; }
+          }
+        }
+        const h = hours < 10 ? '0' + hours : hours;
+        const m = minutes < 10 ? '0' + minutes : minutes;
+        const s = seconds < 10 ? '0' + seconds : seconds;
+        timerElement.innerHTML = `
+          <span class="bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-100">${h}</span>:
+          <span class="bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-100">${m}</span>:
+          <span class="bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-100">${s}</span>
+        `;
+      }, 1000);
+    }
+    startTimer();
+  </script>
+</body>
+</html>
